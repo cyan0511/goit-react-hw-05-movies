@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import SharedLayout from './Shared/SharedLayout';
 import { NotFoundPage } from '../pages/NotFoundPage';
 import { lazy, Suspense } from 'react';
@@ -26,7 +26,7 @@ export const App = () => {
               <Route path="reviews" element={<ReviewList />} />
             </Route>
           </Route>
-          <Route path="*" element={<NotFoundPage />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
    </Suspense>
   );
