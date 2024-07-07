@@ -4,7 +4,7 @@ import { MovieList } from 'components/MovieList/MovieList';
 import { Outlet } from 'react-router-dom';
 import css from './MoviesPage.module.css';
 
-export const MoviesPage = () => {
+const MoviesPage = () => {
   const [searchQuery, setSearchQuery] = useState('Friends');
   const [movies, setMovies] = useState([]);
 
@@ -12,7 +12,6 @@ export const MoviesPage = () => {
     if (!searchQuery.trim()) return;
     try {
       const movies = await fetchMovieByQuery(searchQuery);
-      console.log('movies', movies);
       setMovies(movies);
     } catch (error) {
       console.error(error);
@@ -35,3 +34,5 @@ export const MoviesPage = () => {
     </div>
   );
 };
+
+export default MoviesPage;

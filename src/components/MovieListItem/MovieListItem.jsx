@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import css from './MovieListItem.module.css';
 
-export const MovieListItem = ({movie: { id, title, poster_path }}) => {
+export const MovieListItem = ({ id, title, poster_path }) => {
   return (
     <li className={css.movieItem}>
       <Link to={`/movies/${id}`} className={css.movieLink}>
@@ -18,9 +18,7 @@ export const MovieListItem = ({movie: { id, title, poster_path }}) => {
 };
 
 MovieListItem.propTypes = {
-  movie: {
-    id: PropTypes.number.isRequired,
-    title: PropTypes.string.isRequired,
-    poster_path: PropTypes.string.isRequired,
-  }
+  id: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  poster_path: PropTypes.string,
 };

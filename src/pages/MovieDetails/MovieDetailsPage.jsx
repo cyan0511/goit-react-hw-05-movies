@@ -4,7 +4,7 @@ import { fetchMovieDetails } from 'api/api';
 import css from './MovieDetailsPage.module.css';
 import Loader from '../../components/Loader/Loader';
 
-export const MovieDetailsPage = () => {
+const MovieDetailsPage = () => {
   const { movieId } = useParams();
   const [movieDetails, setMovieDetails] = useState(null);
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ export const MovieDetailsPage = () => {
   }
 
   return (
-    <div class={css.container}>
+    <div className={css.container}>
       <button className={css.goBackButton} onClick={() => navigate(-1)}>⬅ Go back</button>
 
       <div className={css.movieDetailsContainer}>
@@ -78,3 +78,5 @@ export const MovieDetailsPage = () => {
   )
     ;
 };
+
+export default MovieDetailsPage;

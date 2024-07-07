@@ -6,7 +6,7 @@ export const MovieList = ({ movies }) => {
   return (
     <ul className={css.movieList}>
       {movies.map(movie => (
-        <MovieListItem key={movie.id} movie={movie} />
+        <MovieListItem key={movie.id} id={movie.id} title={movie.title} poster_path={movie.poster_path} />
       ))}
     </ul>
   );
