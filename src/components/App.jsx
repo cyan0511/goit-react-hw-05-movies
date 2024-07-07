@@ -1,6 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import SharedLayout from './Shared/SharedLayout';
-import { NotFoundPage } from '../pages/NotFoundPage';
 import { lazy, Suspense } from 'react';
 import Loader from './Loader/Loader';
 
