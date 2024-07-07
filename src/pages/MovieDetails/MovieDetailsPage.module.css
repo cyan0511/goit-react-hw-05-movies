@@ -1,0 +1,52 @@
+.movieDetailsContainer {
+  display: flex;
+  margin: 20px;
+  width: 70%;
+}
+
+.image {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.movieDetailsWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.goBackButton {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.goBackLink {
+  display: block;
+  margin-top: 50px;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.additionalInfo {
+  text-align: center;
+}
+
+.additionalLinks a {
+  display: inline-block;
+  margin-right: 10px;
+}
